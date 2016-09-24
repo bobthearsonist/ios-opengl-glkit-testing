@@ -37,24 +37,17 @@ Boolean isRedIncreasing;
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
--(void)display
-{
-    //draw red
-    glClearColor(1.0 , 0.0f, 0.0f, 0.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-}
-
 - (void)updateRedLevel
 {
     if(isRedIncreasing)
     {
-        //currentRedLevel += (rateOfRedIncrease * controller.timeSinceLastUpdate);
-        currentRedLevel += 0.1;
+        currentRedLevel += (rateOfRedIncrease * self.timeSinceLastUpdate);
+        //currentRedLevel += 0.1;
     }
     else
     {
-        //currentRedLevel -= (rateOfRedIncrease * controller.timeSinceLastUpdate);
-        currentRedLevel -= 0.1;
+        currentRedLevel -= (rateOfRedIncrease * self.timeSinceLastUpdate);
+        //currentRedLevel -= 0.1;
     }
     
     if(currentRedLevel >= 1.0)
