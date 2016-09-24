@@ -15,7 +15,6 @@
 		8446E37B1D8F22AF00EB52A0 /* OpenGLTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446E37A1D8F22AF00EB52A0 /* OpenGLTestTests.m */; };
 		8446E3861D8F22AF00EB52A0 /* OpenGLTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446E3851D8F22AF00EB52A0 /* OpenGLTestUITests.m */; };
 		8446E3941D8F22C500EB52A0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8446E3931D8F22C500EB52A0 /* OpenGLES.framework */; };
-		8446E3971D918DEE00EB52A0 /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446E3961D918DEE00EB52A0 /* SimpleView.m */; };
 		8446E3991D918EAF00EB52A0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8446E3981D918EAF00EB52A0 /* GLKit.framework */; };
 		8446E39C1D918F3B00EB52A0 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446E39B1D918F3B00EB52A0 /* SimpleViewController.m */; };
 		8446E39E1D91ABBC00EB52A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8446E39D1D91ABBC00EB52A0 /* QuartzCore.framework */; };
@@ -54,8 +53,6 @@
 		8446E3851D8F22AF00EB52A0 /* OpenGLTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLTestUITests.m; sourceTree = "<group>"; };
 		8446E3871D8F22AF00EB52A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8446E3931D8F22C500EB52A0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		8446E3951D918DEE00EB52A0 /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleView.h; sourceTree = "<group>"; };
-		8446E3961D918DEE00EB52A0 /* SimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleView.m; sourceTree = "<group>"; };
 		8446E3981D918EAF00EB52A0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		8446E39A1D918F3B00EB52A0 /* SimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
 		8446E39B1D918F3B00EB52A0 /* SimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
@@ -123,8 +120,6 @@
 				8446E36E1D8F22AF00EB52A0 /* LaunchScreen.storyboard */,
 				8446E3711D8F22AF00EB52A0 /* Info.plist */,
 				8446E3601D8F22AF00EB52A0 /* Supporting Files */,
-				8446E3951D918DEE00EB52A0 /* SimpleView.h */,
-				8446E3961D918DEE00EB52A0 /* SimpleView.m */,
 				8446E39A1D918F3B00EB52A0 /* SimpleViewController.h */,
 				8446E39B1D918F3B00EB52A0 /* SimpleViewController.m */,
 			);
@@ -288,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8446E39C1D918F3B00EB52A0 /* SimpleViewController.m in Sources */,
-				8446E3971D918DEE00EB52A0 /* SimpleView.m in Sources */,
 				8446E3651D8F22AF00EB52A0 /* AppDelegate.m in Sources */,
 				8446E3621D8F22AF00EB52A0 /* main.m in Sources */,
 			);

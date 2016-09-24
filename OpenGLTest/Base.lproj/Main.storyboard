@@ -13,9 +13,12 @@
                         <viewControllerLayoutGuide type="top" id="fhm-ps-UX1"/>
                         <viewControllerLayoutGuide type="bottom" id="lZc-Oo-3Ly"/>
                     </layoutGuides>
-                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="GKD-jO-ITY" customClass="SimpleView">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GKD-jO-ITY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="81X-s5-n2d" id="tEP-mK-vLp"/>
+                        </connections>
                     </glkView>
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5h-jt-E0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
