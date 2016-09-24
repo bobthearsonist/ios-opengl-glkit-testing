@@ -11,11 +11,10 @@
 GLfloat rateOfIncrease = 1.0;
 
 @implementation SimpleView
-{
+
 GLfloat rateOfRedIncrease;
 GLfloat currentRedLevel;
 Boolean isRedIncreasing;
-}
 
 -(id)init
 {
@@ -34,31 +33,31 @@ Boolean isRedIncreasing;
 
 - (void)updateRedLevel: (GLKViewController*)controller
 {
-    if(self->isRedIncreasing)
+    if(isRedIncreasing)
     {
-        self->currentRedLevel += (rateOfRedIncrease * controller.timeSinceLastUpdate);
+        currentRedLevel += (rateOfRedIncrease * controller.timeSinceLastUpdate);
     }
     else
     {
-        self->currentRedLevel -= (rateOfRedIncrease * controller.timeSinceLastUpdate);
+        currentRedLevel -= (rateOfRedIncrease * controller.timeSinceLastUpdate);
     }
     
-    if(self->currentRedLevel >= 1.0)
+    if(currentRedLevel >= 1.0)
     {
-        self->currentRedLevel = 1.0;
-        self->isRedIncreasing = NO;
+        currentRedLevel = 1.0;
+        isRedIncreasing = NO;
     }
-    if(self->currentRedLevel <= 0.0)
+    if(currentRedLevel <= 0.0)
     {
-        self->currentRedLevel = 0.0;
-        self->isRedIncreasing = YES;
+        currentRedLevel = 0.0;
+        isRedIncreasing = YES;
     }
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     //draw red
-    glClearColor(red , 0.0f, 0.0f, 0.0f);
+    glClearColor(currentRedLevel , 0.0f, 0.0f, 0.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 

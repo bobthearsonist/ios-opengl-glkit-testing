@@ -17,7 +17,7 @@
 
 -(void)update
 {
-    [(SimpleView*)self.view updateRedLevel];
+    [(SimpleView*)self.view updateRedLevel:self];
 }
 
 @end

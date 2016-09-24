@@ -9,5 +9,5 @@
 #import <GLKit/GLKit.h>
 
 @interface SimpleView : GLKView
--(void)updateRedLevel;
+-(void)updateRedLevel: (GLKViewController*)controller;
 @end
