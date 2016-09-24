@@ -11,5 +11,5 @@
 
 #import "SimpleView.h"
 
-@interface SimpleViewController : GLKViewController
+@interface SimpleViewController : GLKViewController <GLKViewDelegate>
 @end
