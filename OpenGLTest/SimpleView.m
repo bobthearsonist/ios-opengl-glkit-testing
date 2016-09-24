@@ -54,6 +54,13 @@ Boolean isRedIncreasing;
     }
 }
 
+-(void)display
+{
+    //draw red
+    glClearColor(currentRedLevel , 0.0f, 0.0f, 0.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
+
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     //draw red
