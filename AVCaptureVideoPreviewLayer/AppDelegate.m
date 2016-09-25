@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  OpenGLTest
+//  AVCaptureVideoPreviewLayer
 //
-//  Created by admin on 9/18/16.
+//  Created by admin on 9/25/16.
 //  Copyright © 2016 me. All rights reserved.
 //
 
@@ -17,8 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    //[self.window setRootViewController:[storyboard instantiateViewControllerWithIdentifier:@"Simple View Controller"];
     
     return YES;
 }

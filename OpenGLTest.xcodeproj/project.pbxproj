@@ -18,6 +18,7 @@
 		8446E3991D918EAF00EB52A0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8446E3981D918EAF00EB52A0 /* GLKit.framework */; };
 		8446E39C1D918F3B00EB52A0 /* SimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446E39B1D918F3B00EB52A0 /* SimpleViewController.m */; };
 		8446E39E1D91ABBC00EB52A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8446E39D1D91ABBC00EB52A0 /* QuartzCore.framework */; };
+		8446E3A41D97169500EB52A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8446E3A31D97169500EB52A0 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		8446E39A1D918F3B00EB52A0 /* SimpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleViewController.h; sourceTree = "<group>"; };
 		8446E39B1D918F3B00EB52A0 /* SimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleViewController.m; sourceTree = "<group>"; };
 		8446E39D1D91ABBC00EB52A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8446E3A21D97169500EB52A0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8446E3A31D97169500EB52A0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				8446E3601D8F22AF00EB52A0 /* Supporting Files */,
 				8446E39A1D918F3B00EB52A0 /* SimpleViewController.h */,
 				8446E39B1D918F3B00EB52A0 /* SimpleViewController.m */,
+				8446E3A21D97169500EB52A0 /* ViewController.h */,
+				8446E3A31D97169500EB52A0 /* ViewController.m */,
 			);
 			path = OpenGLTest;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			files = (
 				8446E39C1D918F3B00EB52A0 /* SimpleViewController.m in Sources */,
 				8446E3651D8F22AF00EB52A0 /* AppDelegate.m in Sources */,
+				8446E3A41D97169500EB52A0 /* ViewController.m in Sources */,
 				8446E3621D8F22AF00EB52A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +516,7 @@
 				8446E38C1D8F22AF00EB52A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8446E38D1D8F22AF00EB52A0 /* Build configuration list for PBXNativeTarget "OpenGLTestTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				8446E38F1D8F22AF00EB52A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8446E3901D8F22AF00EB52A0 /* Build configuration list for PBXNativeTarget "OpenGLTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				8446E3921D8F22AF00EB52A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

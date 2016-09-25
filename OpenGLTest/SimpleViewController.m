@@ -8,6 +8,8 @@
 
 #import "SimpleViewController.h"
 
+static GLfloat rateOfIncrease = 1.0;
+
 @implementation SimpleViewController
 
 GLfloat rateOfRedIncrease;
@@ -42,12 +44,10 @@ Boolean isRedIncreasing;
     if(isRedIncreasing)
     {
         currentRedLevel += (rateOfRedIncrease * self.timeSinceLastUpdate);
-        //currentRedLevel += 0.1;
     }
     else
     {
         currentRedLevel -= (rateOfRedIncrease * self.timeSinceLastUpdate);
-        //currentRedLevel -= 0.1;
     }
     
     if(currentRedLevel >= 1.0)
