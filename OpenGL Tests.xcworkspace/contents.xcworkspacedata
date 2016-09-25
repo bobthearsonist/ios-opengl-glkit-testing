@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CameraInContainer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AVCaptureVideoPreviewLayer.xcodeproj">
    </FileRef>
    <FileRef

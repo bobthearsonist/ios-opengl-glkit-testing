@@ -4,25 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>OpenGLTest.xcscheme</key>
+		<key>CameraInContainer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8446E35C1D8F22AF00EB52A0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8446E3751D8F22AF00EB52A0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8446E3801D8F22AF00EB52A0</key>
+		<key>84F60EC01D98485400AE8A35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
