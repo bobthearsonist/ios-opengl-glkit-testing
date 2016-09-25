@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  CameraInContainer
+//  AVCaptureVideoPreviewLayer
 //
 //  Created by admin on 9/25/16.
 //  Copyright © 2016 me. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CameraViewController : UIViewController
 
 
 @end

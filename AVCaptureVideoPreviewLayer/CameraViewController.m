@@ -6,13 +6,13 @@
 //  Copyright © 2016 me. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CameraViewController.h"
 
-@interface ViewController ()
+@interface CameraViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CameraViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

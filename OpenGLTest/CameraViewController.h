@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SimpleViewController.h"
 
-@interface ViewController : UIViewController
+@interface CameraViewController : UIViewController
 
 @end

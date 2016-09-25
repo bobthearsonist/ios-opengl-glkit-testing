@@ -6,12 +6,12 @@
 //  Copyright © 2016 me. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CameraViewController.h"
 
-@interface ViewController ()
+@interface CameraViewController ()
 @end
 
-@implementation ViewController
+@implementation CameraViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,9 +28,29 @@
     
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self loadCameraView];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadCameraView{
+    UIImagePickerController* cameraView = [[UIImagePickerController alloc] init];
+    cameraView.sourceType = UIImagePickerControllerSourceTypeCamera;
+    cameraView.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+    cameraView.showsCameraControls = NO;
+    cameraView.toolbarHidden = YES;
+    cameraView.navigationBarHidden = YES;
+    
+    //cameraView.cameraOverlayView = [[UIViewController alloc] initWithNibName:@"CompassOverlay" bundle:nil];
+    //OR this for auto layout
+    //[cameraView.cameraOverlayView addSubview:_compassOverlayViewController.view];
+    
+    [self presentViewController:cameraView animated:NO completion:nil];
 }
 
 /*

@@ -23,12 +23,12 @@
                 </glkViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5h-jt-E0s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="832" y="-20"/>
+            <point key="canvasLocation" x="1536" y="731"/>
         </scene>
-        <!--View Controller-->
+        <!--Camera View Controller-->
         <scene sceneID="fND-9b-jwR">
             <objects>
-                <viewController id="Rvz-2S-nHZ" sceneMemberID="viewController">
+                <viewController id="Rvz-2S-nHZ" customClass="CameraViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yc8-pe-ZwP"/>
                         <viewControllerLayoutGuide type="bottom" id="biN-aE-Xbt"/>
