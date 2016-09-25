@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SegueTest/SegueTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CameraInContainer.xcodeproj">
    </FileRef>
    <FileRef
