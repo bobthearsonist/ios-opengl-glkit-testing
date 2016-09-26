@@ -27,6 +27,12 @@ Boolean isRedIncreasing;
     self.preferredFramesPerSecond = 60;
 }
 
+-(void)didMoveToParentViewController:(UIViewController *)parent
+{
+    [super didMoveToParentViewController:parent];
+}
+
+#pragma mark GLKit overides
 -(void)update
 {
     [self updateRedLevel];

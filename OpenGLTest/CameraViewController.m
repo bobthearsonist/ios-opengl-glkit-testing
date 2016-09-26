@@ -9,6 +9,7 @@
 #import "CameraViewController.h"
 
 @interface CameraViewController ()
+@property UIImagePickerController* cameraView ;
 @end
 
 @implementation CameraViewController
@@ -17,20 +18,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
-    SimpleViewController* childViewController;
-    childViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Simple View Controller"];
-    //[childViewController.view setFrame:CGRectMake(0.0f, 0.0f, self.view.frame.size.width, self.view.frame.size.height)];
-    
-    [self addChildViewController:childViewController];
-    [childViewController didMoveToParentViewController:self];
-    [self.view addSubview:childViewController.view];
-    
+    [self loadCameraView];
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    [self loadCameraView];
+    //this takes the whole view...
+    //[self showViewController: cameraView sender:self];
+    //I think that this method is frowned upon. Who is the parent Controller? The trees diverge.
+    [self.view addSubview: self.cameraView.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,18 +35,16 @@
 }
 
 - (void)loadCameraView{
-    UIImagePickerController* cameraView = [[UIImagePickerController alloc] init];
-    cameraView.sourceType = UIImagePickerControllerSourceTypeCamera;
-    cameraView.cameraDevice = UIImagePickerControllerCameraDeviceRear;
-    cameraView.showsCameraControls = NO;
-    cameraView.toolbarHidden = YES;
-    cameraView.navigationBarHidden = YES;
+    self.cameraView = [[UIImagePickerController alloc] init];
+    self.cameraView.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.cameraView.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+    self.cameraView.showsCameraControls = NO;
+    self.cameraView.toolbarHidden = YES;
+    self.cameraView.navigationBarHidden = YES;
     
     //cameraView.cameraOverlayView = [[UIViewController alloc] initWithNibName:@"CompassOverlay" bundle:nil];
     //OR this for auto layout
     //[cameraView.cameraOverlayView addSubview:_compassOverlayViewController.view];
-    
-    [self presentViewController:cameraView animated:NO completion:nil];
 }
 
 /*
